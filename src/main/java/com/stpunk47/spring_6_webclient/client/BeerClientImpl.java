@@ -10,7 +10,7 @@ public class BeerClientImpl implements BeerClient {
     private final WebClient webClient;
 
     public BeerClientImpl(WebClient.Builder webclientBuilder) {
-        this.webClient = WebClient.builder()
+        this.webClient = webclientBuilder
                 .baseUrl("http://localhost:8080")
                 .build();
     }
